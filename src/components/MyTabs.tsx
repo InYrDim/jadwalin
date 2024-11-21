@@ -119,7 +119,7 @@ export function MyTabs() {
                   variant={"reverse"}
                   onClick={handleSetFormat}
                 >
-                  Buat Format
+                  Simpan Format
                 </Button>
               </AlertDialogTrigger>
             </AlertDialog>
