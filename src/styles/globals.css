@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-circle {
+    background: radial-gradient(#e6e6e6 15%, transparent 16%),
+      repeating-linear-gradient(
+        0deg,
+        transparent 6.5%,
+        #ffffff 7%,
+        #ffffff 9%,
+        transparent 10%
+      ),
+      linear-gradient(
+        45deg,
+        transparent 49%,
+        #e6e6e6 49%,
+        #e6e6e6 51%,
+        transparent 51%
+      ),
+      linear-gradient(
+        -45deg,
+        transparent 49%,
+        #e6e6e6 49%,
+        #e6e6e6 51%,
+        transparent 51%
+      );
+    background-size: 1em 1em;
+    background-color: #ffffff;
+    opacity: 1;
+  }
+}
+
+body {
+  background: radial-gradient(circle, #bbbbbb 5%, transparent 5%);
+  background-size: 0.8em 0.8em;
+  background-color: #ffffff;
+  opacity: 1;
+}
