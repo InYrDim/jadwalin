@@ -1,0 +1,38 @@
+---
+import { Button } from '@/components/ui/button';
+import Layout from '../layouts/Layout.astro';
+import { MyTabs } from '@/components/MyTabs';
+---
+
+<Layout title="Jadwalin">
+	<div class="flex flex-col justify-between h-dvh px-4 sm:px-0">
+		<main class="max-w-md md:max-w-xl mx-auto space-y-8 flex-1 mt-[10dvh] sm:mt-0 sm:grid sm:place-items-center">
+			
+			<div>
+				<h1 class="text-5xl sm:text-4xl font-semibold sm:text-center font-scp mb-8 sm:mb-8 sm:mt-16">Welcome to Docs!</h1>
+				<p>
+					Di halaman ini kamu dapat menemukan dokumentasi untuk memudahkan kamu dalam menggunakan <strong>Jadwalin</strong>.
+				</p>
+				
+				<div class="mt-4 my-16 space-y-1">
+                    <h2 class="font-bold text-lg">Variable</h2>
+                    <p class="text-neutral-700">Untuk nulis variable kamu bisa make prefix <code class="bg-neutral-100 text-neutral-500">#@</code>.</p>
+                    <div class="flex flex-col space-y-1 bg-neutral-50 border-dashed border-neutral-400 border-2 p-2">
+                        <span>#@dosen</span>
+                        <span>#@matkul</span>
+                        <span>#@date</span>
+                    </div>
+                    <p>Saat ini itu aja variable yang ada. Shipp🗿👍</p>
+				</div>
+
+				<a href="./" class="block mx-auto">
+                    <Button className="block mx-auto">Kembali ke Halaman Utama!</Button>
+                </a>
+			</div>
+		</main>
+		<footer class="text-center border-t-2 border-black py-2 mt-16">
+			<p class="font-scp">&copy; 2024 Jadwalin</p>
+		</footer>
+	</div>
+</Layout>
+
